@@ -1,7 +1,8 @@
 import joblib
 
 def predict(data):
-    clf = joblib.load("final_modelDTR.pkl")
-    pipe = joblib.load("full_pipeline.pkl")
-    data1 = pipe.tranform(data)
-    return clf.predict(data1)
+    model = joblib.load("final_modelDTR.pkl")
+    pipeline = joblib.load('full_pipeline.pkl')
+    data = pipeline.transform(data)
+    
+    return model.predict(data)
