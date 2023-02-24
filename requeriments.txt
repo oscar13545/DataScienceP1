@@ -1,4 +1,5 @@
 joblib==0.14.1
+Downloading joblib-1.0.1-py3-none-any.whl (303 kB)
 streamlit==1.7.0
 scikit-learn==0.23.1
 pandas==1.0.5
