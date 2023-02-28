@@ -6,15 +6,11 @@ from End_to_end import CombinedAttributesAdder
 
 import joblib
 
-st.title('Classifying Iris Flowers')
-st.markdown('Toy model to play to classify iris flowers into \
-setosa, versicolor, virginica')
-
-st.header("Plant Features")
+st.title('End_to_end')
+st.header("Parametros")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.text("Parametros")
     Longitud = st.slider('Longitud', -120.0, -110.0, -150.0, step=0.01)
     Latitud = st.slider('Latitud', 30.0, 40.0, 35.0)
     Housing_median_age = st.number_input(label="Housing Median Age",step=1., min_value=1.00, max_value=1000.00)
