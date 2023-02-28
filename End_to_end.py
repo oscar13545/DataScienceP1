@@ -200,7 +200,7 @@ for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
 
 final_model = grid_search.best_estimator_
 joblib.dump(final_model, "final_model.pkl")
-"""
+
 final_model = joblib.load("final_model.pkl")
 
 X_test = strat_test_set.drop("median_house_value", axis=1)
@@ -220,7 +220,7 @@ squared_errors = (final_predictions - y_test) ** 2
 resultado=np.sqrt(stats.t.interval(confidence, len(squared_errors) - 1,
 loc=squared_errors.mean (), scale=stats.sem(squared_errors)))
 print("Resultado del Status del Random Forest Regressor: ",resultado)
-
+"""
 #---------------------------------------------------------
 #       -LinearRegression-
 """
